@@ -1,0 +1,17 @@
+ Best-Case Scenario (Array is Pre-Sorted):
+In the best-case scenario, the array is already sorted, and no swaps are needed during the entire pass. However, the Bubble Sort algorithm still needs to make a complete pass through the array to determine that it is sorted. In the best case, the time complexity is O(n) for a single pass, and the overall time complexity is O(n) since only one pass is needed.
+
+2. Average-Case Scenario (Randomly Arranged Array):
+In the average-case scenario, the efficiency of Bubble Sort depends on the initial arrangement of elements in the array. On average, Bubble Sort has a time complexity of O(n^2), where n is the size of the array. This is because, in each pass, Bubble Sort compares and swaps adjacent elements, and it may need multiple passes to sort the entire array.
+
+3. Worst-Case Scenario (Array is Arranged in Reverse Order):
+In the worst-case scenario, the array is arranged in reverse order, meaning that the largest element is at the beginning. In each pass, Bubble Sort compares and swaps adjacent elements until the largest element "bubbles up" to its correct position at the end of the array. The algorithm needs to make n passes to sort the entire array, resulting in a time complexity of O(n^2).
+
+Underlying Concepts Influencing Bubble Sort's Behavior:
+Number of Elements: Bubble Sort's time complexity is influenced by the number of elements in the array. The algorithm compares and swaps elements in each pass, and the total number of passes required is proportional to the number of elements.
+
+Initial Order: The initial arrangement of elements in the array plays a crucial role. If the array is partially sorted or nearly sorted, the number of passes needed may be reduced.
+
+Adaptive Property: Bubble Sort has an adaptive property in the sense that it performs better when the array is partially sorted. In such cases, the algorithm can terminate early if no swaps are made during a pass.
+
+Algorithmic Structure: Bubble Sort uses a simple algorithmic structure where adjacent elements are compared and swapped if they are in the wrong order. This simplicity makes it easy to implement but contributes to its higher time complexity compared to more efficient sorting algorithms like Merge Sort or QuickSort.

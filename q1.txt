@@ -1,0 +1,15 @@
+Adjacency Matrix: In this representation, a matrix is used to represent the connections between vertices. The rows and columns of the matrix represent vertices, and the entries indicate whether an edge exists between the corresponding vertices.
+
+Adjacency List: In this representation, each vertex maintains a list of its adjacent vertices. This can be implemented using arrays, linked lists, or other data structures.
+
+These structures have distinct visual representations:
+
+Adjacency Matrix: The adjacency matrix is a two-dimensional matrix where rows and columns represent vertices. If there is an edge between two vertices, the corresponding entry in the matrix is marked as 1 (or some other non-zero value). If there is no edge, the entry is marked as 0. This representation tends to be more compact for dense graphs but can be inefficient for sparse graphs due to the space required for storing many zeroes.
+
+Adjacency List: Adjacency lists are typically represented as a collection of lists or arrays where each vertex maintains a list of its adjacent vertices. This representation is more space-efficient for sparse graphs since it only stores information about existing edges.
+
+The choice of representation can impact the conceptual understanding of the graph's relationships:
+
+Adjacency Matrix: The adjacency matrix provides a clear and concise representation of which vertices are directly connected. It allows for efficient checking of whether there is an edge between two vertices. However, it may not be as intuitive for large graphs due to its size and potential for many zero entries.
+
+Adjacency List: Adjacency lists provide a more intuitive representation of the graph's structure, especially for sparse graphs. It allows for easy traversal of neighbors for each vertex. However, operations like checking whether there is an edge between two vertices might require iterating through the adjacency lists, which can be less efficient compared to the matrix representation.

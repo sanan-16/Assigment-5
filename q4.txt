@@ -1,0 +1,24 @@
+Selection Sort is a simple sorting algorithm that repeatedly selects the minimum (or maximum) element from the unsorted portion of the array and moves it to the beginning (or end) of the sorted portion. It works by dividing the input array into two subarrays: sorted and unsorted. Initially, the sorted subarray is empty, and the unsorted subarray contains all elements of the input array.
+
+The algorithm proceeds as follows:
+
+Initial State: Initially, the entire array is considered unsorted.
+
+Selection of Minimum Element: The algorithm iterates through the unsorted subarray to find the minimum element.
+
+Swapping: Once the minimum element is found, it is swapped with the leftmost (or rightmost) element of the unsorted subarray, effectively extending the sorted subarray.
+
+Shrinking Unsorted Subarray: After each iteration, the size of the unsorted subarray decreases by one, and the sorted subarray grows by one element.
+
+Repeat: Steps 2-4 are repeated until the entire array is sorted.
+
+Key Principles Guiding the Sorting Procedure:
+Selection of Minimum Element: At each iteration, Selection Sort selects the minimum (or maximum) element from the unsorted portion of the array. This selection process is essential for identifying the next element to be placed in the sorted subarray.
+
+Swapping: Once the minimum (or maximum) element is found, it is swapped with the leftmost (or rightmost) element of the unsorted subarray. This swapping operation ensures that the selected element is placed at the correct position in the sorted subarray.
+
+Extension of Sorted Subarray: After each iteration, the sorted subarray grows by one element, and the unsorted subarray shrinks by one element. This process continues until the entire array is sorted.
+
+Efficiency: Selection Sort has a time complexity of O(n^2), where n is the number of elements in the array. This is because, in the worst case, it requires nested loops to traverse the array and select the minimum (or maximum) element. However, Selection Sort has a relatively small number of swaps compared to other sorting algorithms like Bubble Sort, making it more efficient in practice.
+
+In-place Sorting: Selection Sort sorts the array in-place, meaning it does not require additional storage space other than the input array itself. This makes it suitable for sorting arrays with limited memory availability.

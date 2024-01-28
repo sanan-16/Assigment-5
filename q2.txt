@@ -1,0 +1,21 @@
+A graph is considered a tree if it satisfies the following structural characteristics:
+
+Acyclic: A tree is an acyclic graph, meaning it does not contain any cycles. A cycle is a path in the graph that starts and ends at the same vertex, passing through distinct vertices along the way. In other words, there are no repeated edges or vertices in a path within a tree.
+
+Connected: A tree is a connected graph, meaning there exists a path between every pair of vertices in the graph. Specifically, a tree is connected if there is exactly one path between every pair of vertices.
+
+Has N-1 Edges: A tree with N vertices has exactly N-1 edges. This characteristic ensures that the tree is minimally connected, and adding any additional edge would introduce a cycle.
+
+Single Root: A tree has a single root vertex from which all other vertices are reachable. The root vertex has no incoming edges but may have outgoing edges.
+
+Hierarchical Structure: A tree exhibits a hierarchical structure where vertices are organized in levels, with the root at the top level and the leaf nodes at the bottom level. Each vertex, except the root, has exactly one parent vertex.
+
+Differentiating between a graph and a tree structure involves examining these criteria:
+
+Acyclic vs. Cyclic: A graph can be cyclic (contain cycles) or acyclic. If the graph contains no cycles, it may be a tree or a forest (a collection of trees). A graph that contains cycles cannot be a tree.
+
+Connectivity: In a graph, connectivity may vary. It may be fully connected, disconnected, or partially connected. A tree, however, must be fully connected, meaning there is a path between every pair of vertices.
+
+Edge Count: In a general graph, the number of edges can vary. There may be fewer or more than N-1 edges for a graph with N vertices. In contrast, a tree must have exactly N-1 edges.
+
+Root and Hierarchical Structure: A graph does not have a concept of a root or a hierarchical structure. A tree, on the other hand, has a single root vertex and exhibits a hierarchical arrangement where vertices are organized in levels.
